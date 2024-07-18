@@ -1,0 +1,59 @@
+*** ARRAY ***
+      It is collection of similar type of data[homogenous data]
+      it's a data structure which stores homogenous items
+      Array has 0 based index
+
+
+   for example
+             int[] arr ;
+             String[] arr;
+             float weight[];
+   visualization
+         _____________________________________
+        | _____|_____|_____|_____|_____|______|
+
+     arr = new int[size];
+           or
+     int[] arr = new int [10]
+
+* There is another way of declering array [Literal]
+      int[] arr = {1,2,3,5,6,8,9,4,3}
+
+*we have two type of memory in which we store primitive data types , referenceses , function into stack memory and object in heap memory
+  int a=10;
+  int b=5;
+  int[] age;
+
+|   |
+|   |
+|   |
+|   |
+|   |
+|___| <- age
+stack     
+
+age = new int[4];
+|      |                   |                   |
+|      |                   |                   | 
+|      |                   |                   |
+|      |                   |                   |
+|      |                   |___________________|                 
+|_101__| <- age            |____|____|____|____|
+  stack  <---------------     101  102  103  104
+                                    heap
+
+Accessing element in 1D
+* 0 based indexing
+   for example
+             age[0];
+             age[4];
+*  insert number at specific place
+    for example
+             age[3]=7;
+
+
+
+
+
+
+
