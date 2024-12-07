@@ -1,0 +1,44 @@
+Brute solution:-
+                   public static int largest(int[] arr){
+       
+                                  for(int i=arr.length-1;i>=1;i--){
+                                      for(int j=0;j<=i-1;j++){
+                                          if(arr[j]>arr[j+1]){
+                                              int temp=arr[j];
+                                              arr[j]=arr[j+1];
+                                              arr[j+1]=temp;
+                                          }
+                                      }
+                                  }
+                                  
+                                  return  arr[arr.length-1];
+                              }
+                          }
+
+
+In brute solution the time complexity :- o(n^2)
+and  space complexity is :- O(1)
+
+-----------------------xxxxxxxxxxxxxxxxxxxxx---------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--------------------------------
+Optimal solution:-
+
+                  class Solution {
+                      public static int largest(int[] arr) {
+                                  // code here
+                                 int largest=arr[0];
+                                 for(int i=1;i<arr.length;i++)
+                                 {
+                                     if (arr[i]>largest){
+                                         largest=arr[i];
+                                     }
+                                 }
+                                 return largest;
+                              }
+                          }
+
+The Time complexity :- o(n)
+and  space complexity is :- O(1)
+
+----------------------xxxxxxxxxxxxxxxxxxxx------------------------------------xxxxxxxxxxxxxxxxxxxxxxxx--------------------------
+
+IN both of the solution we are not updating the array we are just use a single varibele (largest,temp),so like wise we just have O(1) space use . 
